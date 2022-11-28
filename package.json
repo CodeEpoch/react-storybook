@@ -1,7 +1,7 @@
 {
-  "name": "storybook0",
+  "name": "@epocher/storybook-tur",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,11 +15,21 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +60,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
@@ -61,7 +72,13 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "cross-env": "^7.0.3",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
-  }
+  },
+  "description": "made a banner with storybook",
+  "main": "dist/index.js",
+  "repository": "https://github.com/CodeEpoch/react-storybook.git",
+  "author": "George He <he.george10@gmail.com>",
+  "license": "MIT"
 }
