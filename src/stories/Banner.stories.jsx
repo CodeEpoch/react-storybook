@@ -7,25 +7,24 @@ const Template = args => <Banner {...args} />;
 export const Info = Template.bind({});
 Info.args = {
     variant: "info",
-    children: `This is an INFO banner`
+    children: `This is the content of INFO message box that will be displayed on the screen when the application is started and started successfully`,
+    title: `This is the title of INFO message box`
 }
 
 export const Danger = () => (
   <Banner variant="danger">
     {" "}
-          <p>This is an example of a danger banner to display warnings.</p>   {" "}
+          <p>This is an example of a danger message box to display warnings.</p>   {" "}
   </Banner>
 );
 export const Congrats = () => (
   <Banner variant="congrats">
     {" "}
-          <p> This is an example a congrats banner to celebrate a win!</p>    {" "}
+          <p> This is a green example </p>    {" "}
   </Banner>
 );
 export const Documentation = () => (
   <Banner variant="documentation">
-    {" "}
-         {" "}
     <p>
       {" "}
       This is an example a documentation banner to highlight relevant reading
