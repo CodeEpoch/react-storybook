@@ -4,7 +4,7 @@
   "private": false,
   "description": "Learn Storybook design system",
   "main": "dist/index.js",
-  "repository": "https://github.com/chromaui/learnstorybook-design-system.git",
+  "repository": "https://github.com/CodeEpoch/react-storybook",
   "author": "Tom Coleman <tom@thesnail.org>",
   "license": "MIT",
   "dependencies": {
