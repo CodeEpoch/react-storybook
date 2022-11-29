@@ -1,12 +1,5 @@
 # Storybook design system tutorial
 
-The Storybook design system tutorial is a subset of the full
+The Storybook design system tutorial is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
+Learn more in [Storybook tutorials](https://storybook.js.org/tutorials/).

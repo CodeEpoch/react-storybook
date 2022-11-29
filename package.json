@@ -1,35 +1,31 @@
 {
-  "name": "@epocher/storybook-tur",
+  "name": "@epocher/sb-to-npm",
   "version": "0.1.0",
   "private": false,
+  "description": "Learn Storybook design system",
+  "main": "dist/index.js",
+  "repository": "https://github.com/chromaui/learnstorybook-design-system.git",
+  "author": "Tom Coleman <tom@thesnail.org>",
+  "license": "MIT",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "semantic-ui-css": "^2.5.0",
-    "semantic-ui-react": "^2.1.4",
-    "web-vitals": "^2.1.4"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "polished": "^4.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
-  },
-  "babel": {
-    "presets": [
-      [
-        "react-app",
-        {
-          "absoluteRuntime": false
-        }
-      ]
-    ]
+    "build-storybook": "build-storybook -s public",
+    "test-storybook": "test-storybook",
+    "build-storybook-docs": "build-storybook --docs",
+    "release": "auto shipit --base-branch=main"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +43,16 @@
       }
     ]
   },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -61,25 +67,24 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
-    "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-interactions": "^6.5.13",
-    "@storybook/addon-links": "^6.5.13",
-    "@storybook/builder-webpack5": "^6.5.13",
-    "@storybook/manager-webpack5": "^6.5.13",
-    "@storybook/node-logger": "^6.5.13",
-    "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "^6.5.13",
+    "@babel/preset-typescript": "^7.18.6",
+    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/node-logger": "^6.5.10",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.5.10",
+    "@storybook/test-runner": "^0.5.0",
     "@storybook/testing-library": "^0.0.13",
-    "auto": "^10.37.6",
-    "babel-plugin-named-exports-order": "^0.0.2",
+    "auto": "^10.37.4",
+    "chromatic": "^6.7.4",
     "cross-env": "^7.0.3",
-    "prop-types": "^15.8.1",
-    "webpack": "^5.75.0"
-  },
-  "description": "made a banner with storybook",
-  "main": "dist/index.js",
-  "repository": "https://github.com/CodeEpoch/react-storybook.git",
-  "author": "George He <he.george10@gmail.com>",
-  "license": "MIT"
+    "jest": "27",
+    "prettier": "^2.7.1"
+  }
 }
