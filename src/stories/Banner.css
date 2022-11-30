@@ -1,0 +1,64 @@
+aside[class^="mbox-"]::before {
+  padding: 5px 5px 10px 5px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-family: "Lucida Console";
+  display: flex;
+  color: white;
+  z-index: 10;
+}
+
+.mbox-info {
+  border: 1px solid #00a0df;
+  background: #daf4ff;
+  color: #2a2135;
+}
+.mbox-info::before {
+  content: url("./assets/i-icon.svg");
+  background: #00a0df;
+}
+.mbox-danger {
+  border: 1px solid #df7800;
+  background: #df780033;
+}
+.mbox-danger::before {
+  content: "!";
+  background: #df7800;
+}
+.mbox-congrats {
+  border: 1px solid #72bc23;
+  background: rgb(249, 253, 234);
+}
+.mbox-congrats::before {
+  content: "C";
+  background: #72bc23;
+}
+.mbox-documentation {
+  border: 1px solid #44a9ba;
+  background: rgb(234, 248, 253);
+}
+.mbox-documentation::before {
+  content: "D";
+  background: #44a9ba;
+}
+
+.m-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.m-x {
+  font-family: "Lucida Console";
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 5px 10px 5px;
+  height: 100%;
+}
+.mhide {
+  display: none  !important;
+}
