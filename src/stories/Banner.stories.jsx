@@ -8,7 +8,9 @@ export const Info = Template.bind({});
 Info.args = {
     variant: "info",
     children: `This is the content of INFO message box that will be displayed on the screen when the application is started and started successfully`,
-    title: `This is the title of INFO message box`
+    title: `This is the title of INFO message box`,
+    timeout: 0,
+    closeAble: true,
 }
 
 export const Danger = () => (
@@ -21,15 +23,5 @@ export const Congrats = () => (
   <Banner variant="congrats">
     {" "}
           <p> This is a green example </p>    {" "}
-  </Banner>
-);
-export const Documentation = () => (
-  <Banner variant="documentation">
-    <p>
-      {" "}
-      This is an example a documentation banner to highlight relevant reading
-      materials and documentation.{" "}
-    </p>{" "}
-       {" "}
   </Banner>
 );
