@@ -16,7 +16,7 @@ aside[class^="mbox-"]::before {
   color: #2a2135;
 }
 .mbox-info::before {
-  content: "i";
+  content: url("./assets/i-icon.svg");
   background: #00a0df;
 }
 .mbox-danger {
